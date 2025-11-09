@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Свежие фрукты</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      position: relative;
+      background: url('fruit-banner.png') center/cover no-repeat;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+   
+    header h1, header p, .cta-button {
+      position: relative;
+      z-index: 1;
+    }
+    header h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 20px;
+    }
+    .cta-button {
+      background: #ffcc00;
+      color: #333;
+      padding: 15px 30px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 20px;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      margin-top: 20px;
+      border-radius: 8px;
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .feature {
+      flex: 1 1 250px;
+      background: #eef3f8;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      background: #eee;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Свежие фрукты</h1>
+  <p>Доставка сочных фруктов прямо к вашей двери</p>
+  <a href="#order" class="cta-button">Заказать сейчас</a>
+</header>
+
+<section>
+  <h2>Почему выбирают нас?</h2>
+  <div class="features">
+    <div class="feature">
+      <h3>🍑 Натуральные продукты</h3>
+      <p>Только отборные фрукты без ГМО и химикатов.</p>
+    </div>
+    <div class="feature">
+      <h3>🚚 Быстрая доставка</h3>
+      <p>Привезём свежие плоды в течение 24 часов.</p>
+    </div>
+    <div class="feature">
+      <h3>🎟️ Выгодные акции</h3>
+      <p>Сезонные скидки и бонусы для постоянных клиентов.</p>
+    </div>
+  </div>
+</section>
+
+<section id="order">
+  <h2>Оставить заявку</h2>
+  <form>
+    <label>Имя:<br><input type="text" name="name" required /></label><br><br>
+    <label>Email:<br><input type="email" name="email" required /></label><br><br>
+    <label>Ваш заказ:<br><textarea name="message" rows="5"></textarea></label><br><br>
+    <button type="submit">Отправить</button>
+  </form>
+</section>
+
+<footer>
+  &copy; 2025 Свежие фрукты. Все права защищены.
+</footer>
+
+</body>
+</html>
